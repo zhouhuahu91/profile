@@ -17,14 +17,9 @@ a {
 
 * {
   box-sizing: border-box;
+  @apply text-gray-700 dark:text-neutral-200 font-light;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+svg {
+  @apply fill-gray-700 dark:fill-neutral-200;
 }
