@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <h1 className="text-7xl mb-4">Zhouhua Hu</h1>
         <h2 className="text-4xl">Front-End Developer</h2>
       </div>
-      <div className="p-10 flex items-center justify-center rounded-full border mt-16">
+      <div className="p-8 flex items-center justify-center rounded-full border my-16">
         <div className="relative w-[450px] h-[600px] overflow-hidden rounded-full">
           <Image
             src="/images/profile.JPG"

@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         {/* ******** 2 ********* */}
         <Link href="/">
           <a>
-            <HuIcon size="60" />
+            <HuIcon size="60" className="header_icon_animation" />
           </a>
         </Link>
         {/* ******** 3 ********* */}
@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             </a>
           </Link>
           <a
-            className="border px-2 py-1 text-xs font-medium rounded shadow-sm uppercase"
+            className="border px-2 py-1 text-xs font-medium rounded shadow-sm uppercase bg-white"
             href="/vercel.svg"
             download
           >

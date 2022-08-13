@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           content="initial-scale=1, maximum-scale=1, width=device-width"
         />
       </Head>
-      <div className="dark:bg-neutral-900 min-h-screen">
+      <div className="dark:bg-neutral-900 min-h-screen bg-neutral-50">
         <Header />
         <div>{children}</div>
       </div>

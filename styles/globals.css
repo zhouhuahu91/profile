@@ -23,5 +23,5 @@ svg {
 }
 
 .header_icon_animation {
-  @apply hover:fill-primary hover:-translate-y-0.5 transition-transform duration-300 ease-in;
+  @apply hover:fill-primary hover:-translate-y-0.5 transition-all duration-300 ease-in;
 }
