@@ -14,9 +14,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Head>
         <title>Zhouhua</title>
-        <link rel="icon" href="/icons/HuLogo.jpeg" />
-        <link rel="apple-touch-icon" href="/icons/HuLogo.jpeg" />
-        <link rel="shortcut icon" href="/icons/HuLogo.jpeg" />
+        <link rel="icon" href="/icons/HuLogo.jpg" />
+        <link rel="apple-touch-icon" href="/icons/HuLogo.jpg" />
+        <link rel="shortcut icon" href="/icons/HuLogo.jpg" />
         {/* Meta for the viewport */}
         <meta
           name="viewport"
