@@ -7,10 +7,15 @@ import GitHubIcon from "@/icons/GitHubIcon";
 
 interface HeaderProps {}
 
+// Header has 3 sections;
+// 1. Links to different parts of the website.
+// 2. Home button / logo.
+// 3. Icons for social media & download resume button.
 const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <header className="h-24 flex items-center">
       <nav className="max-w-screen-lg w-full m-auto flex items-center justify-between">
+        {/* ******** 1 ********* */}
         <div className="uppercase text-xs flex space-x-8">
           <Link href="/">
             <a className="font-medium">projects</a>
@@ -19,12 +24,14 @@ const Header: React.FC<HeaderProps> = ({}) => {
             <a className="font-medium">contact</a>
           </Link>
         </div>
+        {/* ******** 2 ********* */}
         <Link href="/">
           <a>
             <HuIcon size="60" />
           </a>
         </Link>
-        <div className="flex items-center space-x-2">
+        {/* ******** 3 ********* */}
+        <div className="flex items-center space-x-4">
           <Link href="https://linkedin.com/in/zhouhuahu">
             <a rel="noreferrer" target="_blank" className="flex items-center">
               <LinkedInIcon className="header_icon_animation" size="20" />
