@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 // Component imports
 import BurgerIcon from "@/icons/BurgerIcon";
@@ -6,6 +6,7 @@ import IconButton from "@/components/IconButton";
 import HuIcon from "@/icons/HuIcon";
 // Animation imports
 import { motion, AnimatePresence } from "framer-motion";
+// Hook imports
 
 interface BurgerMenuProps {}
 
