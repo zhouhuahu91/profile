@@ -17,7 +17,7 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <header className="h-24 flex items-center mx-6">
-      <nav className="max-w-screen-lg w-full m-auto flex items-center justify-between">
+      <nav className="max-w-screen-lg w-full m-auto flex items-center justify-between relative">
         {/* ******** 1 ********* */}
         <div className="uppercase text-xs space-x-8 hidden sm:flex">
           <Link href="/">
@@ -30,12 +30,12 @@ const Header: React.FC<HeaderProps> = ({}) => {
         <BurgerMenu />
         {/* ******** 2 ********* */}
         <Link href="/">
-          <a className="red-focus-ring rounded p-0.5">
+          <a className="red-focus-ring rounded p-0.5 absolute left-1/2 -translate-x-1/2">
             <HuIcon size="50" className="header_icon_animation" />
           </a>
         </Link>
         {/* ******** 3 ********* */}
-        <div className="items-center space-x-4 flex">
+        <div className="items-center space-x-4 hidden sm:flex">
           <Link href="https://linkedin.com/in/zhouhuahu">
             <a
               rel="noreferrer"
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             </a>
           </Link>
           <a
-            className="border px-2 py-1 text-xs font-medium rounded shadow-sm uppercase bg-white hidden sm:block"
+            className="border px-2 py-1 text-xs font-medium rounded shadow-sm uppercase bg-white"
             href="/vercel.svg"
             download
           >
